@@ -43,7 +43,7 @@ dependencies {
     implementation(project(":shared"))
 //    implementation("com.google.android.material:material:1.4.0")
     implementation("androidx.appcompat:appcompat:1.5.0")
-//    implementation("androidx.constraintlayout:constraintlayout:2.1.0")
+    implementation("androidx.constraintlayout:constraintlayout:2.1.0")
 
     // compose dependencies
     val composeVersion = "1.2.1"
@@ -71,5 +71,14 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-viewmodel-savedstate:$lifecycleVersion")
     kapt("androidx.lifecycle:lifecycle-compiler:$lifecycleVersion")
 
+    val koinVersion = "3.2.0"
+
+    implementation("io.insert-koin:koin-android:$koinVersion")
+    // Jetpack WorkManager
+    implementation ("io.insert-koin:koin-androidx-workmanager:$koinVersion")
+    // Navigation Graph
+    implementation ("io.insert-koin:koin-androidx-navigation:$koinVersion")
+    // Jetpack Compose
+    implementation ("io.insert-koin:koin-androidx-compose:$koinVersion")
 
 }
